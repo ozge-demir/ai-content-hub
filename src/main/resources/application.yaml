@@ -1,24 +1,18 @@
 ktor:
   deployment:
-    port: 8080
-    port: ${?PORT}
+    port: "$PORT:8080"
   application:
     modules:
       - com.aicontenthub.ApplicationKt.module
 
 db:
-  url: "jdbc:postgresql://localhost:5432/aicontenthub"
-  url: ${?DATABASE_URL}
-  user: "aicontenthub"
-  user: ${?DATABASE_USER}
-  password: "aicontenthub"
-  password: ${?DATABASE_PASSWORD}
+  url: "$DATABASE_URL:jdbc:postgresql://localhost:5432/aicontenthub"
+  user: "$DATABASE_USER:aicontenthub"
+  password: "$DATABASE_PASSWORD:aicontenthub"
   maxPoolSize: 10
 
 session:
-  secret: "dev-only-change-me-via-SESSION_SECRET-env-in-prod"
-  secret: ${?SESSION_SECRET}
+  secret: "$SESSION_SECRET:dev-only-change-me-via-SESSION_SECRET-env-in-prod"
 
 ai:
-  anthropicApiKey: ""
-  anthropicApiKey: ${?ANTHROPIC_API_KEY}
+  anthropicApiKey: "$ANTHROPIC_API_KEY:"

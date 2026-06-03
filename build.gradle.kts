@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.ktor)
 }
 
@@ -43,6 +44,7 @@ dependencies {
     implementation(libs.postgres)
 
     implementation(libs.kotlinx.html)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.jbcrypt)
 
     implementation(libs.logback.classic)
