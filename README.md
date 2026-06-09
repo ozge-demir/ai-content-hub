@@ -2,7 +2,7 @@
 
 Web app that turns long content (newsletter drafts, blog posts, podcast transcripts) into Twitter threads, LinkedIn posts, and TL;DRs.
 
-v1 wedge for solo content creators. See [CLAUDE.md](CLAUDE.md) for scope, stack, and the 4–6 week shape.
+v1 wedge for solo content creators. See [ARCHITECTURE.md](ARCHITECTURE.md) for the architectural decisions, trade-offs, and what is deliberately not in v1.
 
 ## Stack
 
