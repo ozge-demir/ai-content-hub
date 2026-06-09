@@ -3,6 +3,7 @@ package com.aicontenthub
 import com.aicontenthub.auth.authRoutes
 import com.aicontenthub.config.DatabaseFactory
 import com.aicontenthub.config.UserSession
+import com.aicontenthub.drafts.draftRoutes
 import com.aicontenthub.health.healthRoutes
 import com.aicontenthub.web.homeRoutes
 import io.ktor.server.application.Application
@@ -50,5 +51,6 @@ fun Application.module() {
         healthRoutes()
         authRoutes()
         homeRoutes()
+        draftRoutes()
     }
 }
